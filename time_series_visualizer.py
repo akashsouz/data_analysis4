@@ -18,7 +18,7 @@ def parse_date(x):
     return datetime.strptime(x, "%Y-%m-%d")
 
 df = pd.read_csv(
-    "boilerplate-page-view-time-series-visualizer-main/fcc-forum-pageviews.csv",
+    "./fcc-forum-pageviews.csv",
     index_col=["date"],
     parse_dates=["date"],
     date_parser=parse_date,
